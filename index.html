@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed:wght@700&family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed:wght@700&family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+    <title>Myntra</title>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="left-nav">
+            <div class="brand-logo">
+                <img src="logo_brand.jpeg" class="brand-logo-main" alt="Myntra">
+            </div>
+            <div class="nav-item">
+                <div class="nav-content">
+                    <div class="nav-content-link ptr" id="men">Men</div>
+
+                </div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-content">
+                    <div class="nav-content-link ptr" id="women">Women</div>
+
+                </div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-content">
+                    <div class="nav-content-link ptr" id="kids">Kids</div>
+
+                </div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-content">
+                    <div class="nav-content-link ptr" id="home">Home & Living</div>
+                </div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-content">
+                    <div class="nav-content-link ptr" id="beauty">Beauty</div>
+
+                </div>
+            </div>
+            <div class="modal-area"></div>
+        </div>
+        <div class="right-nav">
+            <div class="nav-item search-box">
+                <div class="search-box-icon">
+                    <div class="material-icons-outlined search-icon">search
+                    </div>
+                    <div class="search-box-box">
+                        <input type="text" name="" id="searchBox" placeholder="Search for products, brands and more" autocomplete="off">
+                    </div>
+                </div>
+
+            </div>
+            <div class="nav-item">
+                <div class="nav-item-icon">
+                    <div class="material-icons-outlined icon ptr">person_outline
+                    </div>
+                </div>
+                <div class="nav-item-labal">Profile</div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-item-icon">
+                    <div class="material-icons-outlined icon ptr">favorite_border
+                    </div>
+                </div>
+                <div class=" nav-item-labal">Wishlist</div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-item-icon">
+                    <div class="material-icons-outlined icon ptr">shopping_bag
+                    </div>
+                </div>
+                <div class="nav-item-labal ">Bag</div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay" onclick="off()"></div>
+
+    <div class="content focus-div">
+        <div class="slideshow-container">
+            <div class="slideshow-inner">
+                <div class="mySlides fade">
+                    <img src='slides/slide1.webp' style='width: 100%;' alt="sally lightfoot crab" />
+                </div>
+                <div class="mySlides fade">
+                    <img src='slides/slide2.webp' style='width: 100%;' alt="fighting nazca boobies" />
+                </div>
+                <div class="mySlides fade">
+                    <img src='slides/slide3.webp' style='width: 100%;' alt="otovalo waterfall" />
+                </div>
+                <div class="mySlides fade">
+                    <img src='slides/slide4.webp' style='width: 100%;' alt="pelican" />
+                </div>
+                <div class="mySlides fade">
+                    <img src='slides/slide5.webp' style='width: 100%;' alt="pelican" />
+                </div>
+                <div class="mySlides fade">
+                    <img src='slides/slide6.webp' style='width: 100%;' alt="pelican" />
+                </div>
+                <div class="mySlides fade">
+                    <img src='slides/slide7.webp' style='width: 100%;' alt="pelican" />
+                </div>
+            </div>
+            <!-- <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+            <a class="next" onclick='plusSlides(1)'>&#10095;</a> -->
+        </div>
+        <br/>
+        <div style='text-align: center;' class="dot-container">
+            <span class="dot" onclick='currentSlide(1)'></span>
+            <span class="dot" onclick='currentSlide(2)'></span>
+            <span class="dot" onclick='currentSlide(3)'></span>
+            <span class="dot" onclick='currentSlide(4)'></span>
+            <span class="dot" onclick='currentSlide(5)'></span>
+            <span class="dot" onclick='currentSlide(6)'></span>
+            <span class="dot" onclick='currentSlide(7)'></span>
+        </div>
+        <h1>Deals of the day</h1>
+        <div class="img-container-1">
+            <img class="ptr" src="dealsOfTheDay/emnow.webp" alt=" " style="margin-left: 30px; ">
+            <img class="ptr" src="dealsOfTheDay/s22.webp" alt=" ">
+            <img class="ptr" src="dealsOfTheDay/roadster.webp" alt=" ">
+            <img class="ptr" src="dealsOfTheDay/cute.webp" alt=" ">
+            <img class="ptr" src="dealsOfTheDay/sweethome.webp" alt=" ">
+
+        </div>
+        <h1>biggest deals on top brands</h1>
+        <div class="img-container-2">
+            <img class="ptr" src="biggestDealsOnTopBrands/s1.webp" alt=" " style="margin-left: 30px; ">
+            <img class="ptr" src="biggestDealsOnTopBrands/s2.webp" alt=" ">
+            <img class="ptr" src="biggestDealsOnTopBrands/s3.webp" alt=" ">
+            <img class="ptr" src="biggestDealsOnTopBrands/s4.webp" alt=" ">
+            <img class="ptr" src="biggestDealsOnTopBrands/s5.jpg" alt=" ">
+            <img class="ptr" src="biggestDealsOnTopBrands/s6.webp" alt=" " style="margin-left: 30px; ">
+            <img class="ptr" src="biggestDealsOnTopBrands/s7.webp" alt=" ">
+            <img class="ptr" src="biggestDealsOnTopBrands/s8.webp" alt=" ">
+            <img class="ptr" src="biggestDealsOnTopBrands/s9.jpg" alt=" ">
+            <img class="ptr" src="biggestDealsOnTopBrands/s10.webp" alt=" ">
+
+        </div>
+        <h1>categories to bag</h1>
+        <div class="img-container">
+
+            <img class="ptr" src=" Categories/shirts.webp " alt=" " style="margin-left: 30px; ">
+            <img class="ptr" src="Categories/tshirt.webp " alt=" ">
+            <img class="ptr" src="Categories/jeans.webp " alt=" ">
+            <img class="ptr" src="Categories/casuals.webp " alt=" ">
+            <img class="ptr" src="Categories/short.webp " alt=" ">
+            <img class="ptr" src="Categories/infant.webp " alt=" ">
+            <img class="ptr" src="Categories/kurta.webp " alt=" " style="margin-left: 30px;margin-top: -4px; ">
+            <img class="ptr" src="Categories/saares.webp " alt=" " style="margin-top: -4px; ">
+            <img class="ptr" src="Categories/dresses.webp " alt=" " style="margin-top: -4px; ">
+            <img class="ptr" src="Categories/heels.webp " alt=" " style="margin-top: -4px; ">
+            <img class="ptr" src="Categories/handbags.webp " alt=" " style="margin-top: -4px; ">
+            <img class="ptr" src="Categories/shorts.webp " alt=" " style="margin-top: -4px; ">
+        </div>
+        <!-- <h1>explore top brands</h1>
+        <h1>trending in western wear</h1>
+        <h1>trending in indian wear</h1>
+        <h1>trending in sports wear</h1>
+        <h1>trending in footwear</h1> -->
+        <h1>trending in footwear</h1>
+        <div class="img-container-2">
+            <img class="ptr" src="footwear/s1.webp" alt=" " style="margin-left: 30px; ">
+            <img class="ptr" src="footwear/s2.jpg" alt=" ">
+            <img class="ptr" src="footwear/s3.webp" alt=" ">
+            <img class="ptr" src="footwear/s4.webp" alt=" ">
+            <img class="ptr" src="footwear/s5.webp" alt=" ">
+            <img class="ptr" src="footwear/s6.webp" alt=" " style="margin-left: 30px; ">
+            <img class="ptr" src="footwear/s7.webp" alt=" ">
+            <img class="ptr" src="footwear/s8.webp" alt=" ">
+            <img class="ptr" src="footwear/s9.webp" alt=" ">
+            <img class="ptr" src="footwear/s10.webp" alt=" ">
+
+        </div>
+    </div>
+    <footer>
+        bs bhai itna hi hai...
+    </footer>
+    <script src="index.js "></script>
+</body>
+
+</html>
